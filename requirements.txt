@@ -1,5 +1,6 @@
 numpy
 pillow
+scikit-image
 streamlit
 opencv
 mediapipe
