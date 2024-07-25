@@ -6,3 +6,4 @@ opencv
 mediapipe
 skimage
 tensorflow
+matplotlib
