@@ -1,5 +1,6 @@
 numpy
 pillow
+dlib
 scikit-image
 streamlit
 opencv
