@@ -8,3 +8,4 @@ mediapipe
 skimage
 tensorflow
 matplotlib
+os
