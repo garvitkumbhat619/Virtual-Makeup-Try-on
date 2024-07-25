@@ -1,11 +1,10 @@
-numpy
-pillow
-dlib
-scikit-image
 streamlit
 opencv-python
 mediapipe
-skimage
-tensorflow
-matplotlib
 os
+numpy
+scikit-image
+Pillow
+dlib
+matplotlib
+tensorflow
