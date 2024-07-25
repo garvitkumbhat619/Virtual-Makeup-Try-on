@@ -1,0 +1,8 @@
+numpy
+pandas
+pillow
+streamlit
+opencv
+mediapipe
+skimage
+tensorflow
