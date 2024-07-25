@@ -3,7 +3,7 @@ pillow
 dlib
 scikit-image
 streamlit
-opencv
+opencv-python
 mediapipe
 skimage
 tensorflow
