@@ -1,16 +1,15 @@
 import streamlit as st
 import cv2
 import mediapipe as mp
-import os
 import numpy as np
 from skimage.filters import gaussian
-from PIL import Image, ImageColor
+from PIL import Image
 import dlib
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import tensorflow as tf
 
-st.sidebar.image("C:/Users/Ravindra.Jain/Downloads/_079d4729-3b9b-45ba-97f9-f4ea8dd88a83.jpg",width=100)
+st.sidebar.image("_079d4729-3b9b-45ba-97f9-f4ea8dd88a83.jpg",width=100) # path of _079d4729-3b9b-45ba-97f9-f4ea8dd88a83.jpg
 st.title("VIRTUAL MAKEUP TRY-ON")
 status1=st.sidebar.selectbox("SELECT AN OPTION:",('LIVE MAKEUP TRY-ON','MAKEUP ON PHOTO','MAKEUP TRANSFER'))
 
@@ -525,8 +524,8 @@ if status1=='MAKEUP ON PHOTO':
 if status1=='MAKEUP TRANSFER':
     
     detector = dlib.get_frontal_face_detector() 
-    sp = dlib.shape_predictor("C:/Users/Ravindra.Jain/shape_predictor_68_face_landmarks.dat")
-    img = dlib.load_rgb_image("C:/Users/Ravindra.Jain/Downloads/01.jpg") # 이미지를 로드한다
+    sp = dlib.shape_predictor("C:/Users/Ravindra.Jain/shape_predictor_68_face_landmarks.dat") # path of shape_predictor_68_face_landmarks.dat
+    img = dlib.load_rgb_image("01.jpg") # path of 01.jpg
     plt.figure(figsize = (16, 10)) 
     #plt.imshow(img)
     img_result = img.copy()
@@ -569,7 +568,7 @@ if status1=='MAKEUP TRANSFER':
         return faces
 
 # test
-    test_img = dlib.load_rgb_image("C:/Users/Ravindra.Jain/Downloads/02.jpg")
+    test_img = dlib.load_rgb_image("02.jpg") path of # 02.jpg
     test_faces = align_faces(test_img)
     fig, axes = plt.subplots(1, len(test_faces)+1, figsize=(20, 16))
 
@@ -577,8 +576,8 @@ if status1=='MAKEUP TRANSFER':
     sess = tf.compat.v1.Session()
     sess.run(tf.compat.v1.global_variables_initializer())
 #loading pre trained model
-    saver = tf.compat.v1.train.import_meta_graph("C:/Users/Ravindra.Jain/Python 3.11/model/checkpoint/model.meta")
-    saver.restore(sess, tf.train.latest_checkpoint("C:/Users/Ravindra.Jain/Python 3.11/model/checkpoint"))
+    saver = tf.compat.v1.train.import_meta_graph("model/checkpoint/model.meta") # path of model.meta
+    saver.restore(sess, tf.train.latest_checkpoint("model/checkpoint")) # path of checkpoint folder
     graph = tf.compat.v1.get_default_graph()
     X = graph.get_tensor_by_name('X:0') # source
     Y = graph.get_tensor_by_name('Y:0') # reference
