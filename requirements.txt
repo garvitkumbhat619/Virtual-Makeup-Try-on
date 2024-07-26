@@ -1,11 +1,11 @@
 CMake
-streamlit==1.21.0
-opencv-python-headless==4.5.5.62
+streamlit
+opencv-python-headless
 mediapipe
 numpy
 scikit-image
 Pillow
-dlib==19.22.0
+dlib
 matplotlib
 tensorflow
 
