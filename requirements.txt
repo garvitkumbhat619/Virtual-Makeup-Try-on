@@ -1,3 +1,4 @@
+CMake
 streamlit
 opencv-python
 mediapipe
