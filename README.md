@@ -45,7 +45,7 @@ https://streamlit.io/
 
 1)Clone this GitHub repository: git clone
 ```bash
-git clone https://github.com/garvitkumbhat619Virtual-Makeup-Try-on/tree/main
+git clone https://github.com/garvitkumbhat619/Virtual-Makeup-Try-on.git
 cd Virtual-Makeup-Try-on
 
 ```
