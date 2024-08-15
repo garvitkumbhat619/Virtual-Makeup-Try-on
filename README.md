@@ -1,6 +1,6 @@
 # Virtual Makeup Try-On
 
-This project is for  IITI-Summer-of-Code 2024 (IITI-SoC'24) in AI/ML division
+This project is for  IITI-Summer-of-Code 2024 (IITI-SoC'24) in AI/ML division and secured🥈Second position.
 
 
 ## Overview
