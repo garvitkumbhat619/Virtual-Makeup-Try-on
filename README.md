@@ -3,6 +3,10 @@
 This project is for  IITI-Summer-of-Code 2024 (IITI-SoC'24) in AI/ML division and secured🥈Second position.
 
 
+
+https://github.com/user-attachments/assets/b52b533b-70d5-455b-93f3-330eb0c6717c
+
+
 ## Overview
 Welcome to Virtual-Makeup-Try-on  repository!! This project uses  OpenCV for capturing and processing video input, and MediaPipe for precise real-time facial landmark detection to apply virtual makeup accurately.This project is as well focused on utilising the key features of Generative Adversarial Networks (GANs) to create realistic and accurate simulations of how makeup products will look on a user's face,Using This model is pre-trained on the Beauty-GAN dataset for instant application of realistic makeup.This README file serves as a comprehensive guide to understanding the project, setting up the environment, running the model, and contributing to the development
 ## Introduction
